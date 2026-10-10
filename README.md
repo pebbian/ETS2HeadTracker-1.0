@@ -1,5 +1,5 @@
 # ETS2HeadTracker 1.0
-> *Lightweight Head-Tracking Solution for Euro Truck Simulator 2 via Mobile Browser Offloading*
+> *Lightweight Head-Tracking for Euro Truck Simulator 2 via Mobile Browser Offloading*
 
 ---
 
