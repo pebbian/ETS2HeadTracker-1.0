@@ -181,7 +181,7 @@ void HttpServerThread() {
     sockaddr_in serverAddr{};
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_addr.s_addr = INADDR_ANY;
-    serverAddr.sin_port = htons(8080);
+    serverAddr.sin_port = htons(47991);
 
     bind(serverSock, (sockaddr*)&serverAddr, sizeof(serverAddr));
     listen(serverSock, SOMAXCONN);
@@ -241,7 +241,7 @@ int main() {
     std::thread serverThread(HttpServerThread);
     serverThread.detach();
 
-    std::cout << "Server jalan di port 8080. Buka http://localhost:8080" << std::endl;
+    std::cout << "Server jalan di port 47991. Buka http://localhost:47991" << std::endl;
     std::cout << "Tekan ENTER buat stop program..." << std::endl;
     std::cin.get();
 
